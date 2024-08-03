@@ -2,7 +2,7 @@
 
 ## Features
 
-- **Tracks Mouse Movement**: Continuously monitors and displays the mouse coordinates.
+- **Tracks Mouse Movement**: Continuously monitors the mouse coordinates.
 
 - **On Left Click**:
   - **Saves Mouse Coordinates**: Records the current position of the mouse cursor.
