@@ -48,11 +48,6 @@ Since the application uses asynchronous functionality, you need to run the serve
 uvicorn mousecamtracker.asgi:application --host 127.0.0.1 --port 8000
 ```
 
-It should look like this ("X" and "Y" are the coordinates of the cursor):
-
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/c23f4242-8cfd-4d53-a5d9-d078f3b03d5b">
-
-
 ## Used Technologies:
 1. asyncio (via Django Channels)
 2. Webserver (with Uvicorn)
