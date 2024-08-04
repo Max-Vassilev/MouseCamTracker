@@ -25,6 +25,18 @@ If you encounter a script execution policy error, you can bypass it with the fol
 ```bash
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 ```
+Then activate the virtual environment:
+```bash
+.venv\Scripts\activate
+```
+
+### 3. Install the required packages
+```bash
+pip install -r requirements.txt
+```
+
+
+
 
 ## Used Technologies:
 1. asyncio (via Django Channels)
