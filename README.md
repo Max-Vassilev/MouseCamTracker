@@ -51,7 +51,7 @@ uvicorn mousecamtracker.asgi:application --host 127.0.0.1 --port 8000
 ```
 
 ## Used Technologies:
-1. asyncio (via Django Channels)
+1. asyncio (via Django Channels for real-time features)
 2. Webserver (with Uvicorn for USGI)
 3. WebSockets
 4. 
