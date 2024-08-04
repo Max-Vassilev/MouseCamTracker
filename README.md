@@ -18,4 +18,9 @@ uvicorn mousecamtracker.asgi:application --host 127.0.0.1 --port 8000
 
 
 ## Used Technologies:
-**1.
+1. Multithread/asyncio
+2. Webserver
+3. Websockets
+4. Pyserial
+5. OpenCV - image/media processing
+6. SQLite / mongoDB
