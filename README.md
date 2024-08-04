@@ -8,12 +8,17 @@
   - **Captures Image**: Takes a snapshot from the connected webcam and saves the image.
 - **Data Storage**: Stores mouse coordinates and image paths in an SQLite database.
 
-## Running the Server
+## Setup and Running the Project
 
-Since the application uses asynchronous functionality, you need to run the server with ASGI. Use Uvicorn with the following command:
+### 1. Clone the repository
 
 ```bash
-uvicorn mousecamtracker.asgi:application --host 127.0.0.1 --port 8000
+git clone https://github.com/yourusername/MouseCamTracker.git
+cd MouseCamTracker
+```
+### 2. Create and activate a virtual environment
+```bash
+python -m venv .venv
 ```
 
 
