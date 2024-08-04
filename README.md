@@ -40,6 +40,12 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
+### 5. Run the server
+Since the application uses asynchronous functionality, you need to run the server with ASGI. Use Uvicorn with the following command:
+```bash
+uvicorn mousecamtracker.asgi:application --host 127.0.0.1 --port 8000
+```
+
 
 ## Used Technologies:
 1. asyncio (via Django Channels)
