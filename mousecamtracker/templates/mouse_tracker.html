@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Tracker</title>
+    <script>
+        const socket = new WebSocket('ws://127.0.0.1:8000/ws/mouse/');
+
+        socket.onopen = () => {
+            console.log('WebSocket connection opened');
+        };
+
+        socket.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+            document.getElementById('coordinates').innerText = `X: ${data.x}, Y: ${data.y}`;
+        };
+
+        document.addEventListener('mousemove', (event) => {
+            const x = event.clientX;
+            const y = event.clientY;
+            socket.send(JSON.stringify({ x, y }));
+        });
+    </script>
+</head>
+<body>
+    <h1>Mouse Tracker</h1>
+    <p id="coordinates">Move your mouse to see coordinates.</p>
+</body>
+</html>
