@@ -49,7 +49,8 @@ uvicorn mousecamtracker.asgi:application --host 127.0.0.1 --port 8000
 ```
 
 It should look like this ("X" and "Y" are the coordinates of the cursor):
-<img width="191" alt="image" src="https://github.com/user-attachments/assets/c23f4242-8cfd-4d53-a5d9-d078f3b03d5b">
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/c23f4242-8cfd-4d53-a5d9-d078f3b03d5b">
 
 
 ## Used Technologies:
