@@ -14,3 +14,6 @@ Since the application uses asynchronous functionality, you need to run the serve
 
 ```bash
 uvicorn mousecamtracker.asgi:application --host 127.0.0.1 --port 8000
+
+## Used Technologies:
+**1.
