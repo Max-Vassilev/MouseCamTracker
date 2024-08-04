@@ -20,7 +20,7 @@ cd MouseCamTracker
 ```bash
 python -m venv .venv
 ```
-### On Windows
+## On Windows
 If you encounter a script execution policy error, you can bypass it with the following command:
 ```bash
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
