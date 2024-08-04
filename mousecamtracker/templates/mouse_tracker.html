@@ -10,10 +10,6 @@
     <script>
         const socket = new WebSocket('ws://127.0.0.1:8000/ws/mouse/');
 
-        socket.onopen = () => {
-            console.log('WebSocket connection opened');
-        };
-
         socket.onmessage = (event) => {
             const data = JSON.parse(event.data);
             document.getElementById('coordinates').innerText = `X: ${data.x}, Y: ${data.y}`;
@@ -28,6 +24,6 @@
 </head>
 <body>
     <h1>Mouse Coordinates</h1>
-    <p id="coordinates">Move your mouse to see coordinates.</p>
+    <p id="coordinates"></p>
 </body>
 </html>
