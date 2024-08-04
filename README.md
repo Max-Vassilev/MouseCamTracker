@@ -28,18 +28,21 @@ If you encounter a script execution policy error, you can bypass it with the fol
 ```bash
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 ```
-
-### 3. Install the required packages
+### 3. Enter the Django project
 ```bash
-pip install -r mousecamtracker/requirements.txt
+cd mousecamtracker
+```
+### 4. Install the required packages
+```bash
+pip install -r requirements.txt
 ```
 
-### 4. Apply migrations
+### 5. Apply migrations
 ```bash
 python manage.py migrate
 ```
 
-### 5. Run the server
+### 6. Run the server
 Since the application uses asynchronous functionality, you need to run the server with ASGI. Use Uvicorn with the following command:
 ```bash
 uvicorn mousecamtracker.asgi:application --host 127.0.0.1 --port 8000
