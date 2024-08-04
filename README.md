@@ -20,13 +20,13 @@ cd MouseCamTracker
 ```bash
 python -m venv .venv
 ```
-If you encounter a script execution policy error, you can bypass it with the following command:
-```bash
-Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
-```
 Then activate the virtual environment:
 ```bash
 .venv\Scripts\activate
+```
+If you encounter a script execution policy error, you can bypass it with the following command:
+```bash
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 ```
 
 ### 3. Install the required packages
