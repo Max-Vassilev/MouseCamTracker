@@ -2,7 +2,7 @@
 
 ## Features
 
-- **Tracks Mouse Movement**: Continuously monitors and displays the mouse coordinates.
+- **Tracks Mouse Movement**: Continuously monitors and displays the mouse coordinates ("X" and "Y").
 - **On Left Click**:
   - **Saves Mouse Coordinates**: Records the current position of the mouse cursor.
   - **Captures Image**: Takes a snapshot from the connected webcam and saves the image.
