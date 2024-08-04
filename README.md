@@ -31,7 +31,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 ### 3. Install the required packages
 ```bash
-pip install -r requirements.txt
+pip install -r mousecamtracker/requirements.txt
 ```
 
 ### 4. Apply migrations
