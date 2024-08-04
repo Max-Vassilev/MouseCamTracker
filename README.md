@@ -35,7 +35,10 @@ Then activate the virtual environment:
 pip install -r requirements.txt
 ```
 
-
+### 4. Apply migrations
+```bash
+python manage.py migrate
+```
 
 
 ## Used Technologies:
