@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mouse Tracker</title>
+    <title>Mouse Coordinates</title>
+    <style>
+        body {
+            background-color: #858585;
+        }
+    </style>
     <script>
         const socket = new WebSocket('ws://127.0.0.1:8000/ws/mouse/');
 
@@ -22,7 +27,7 @@
     </script>
 </head>
 <body>
-    <h1>Mouse Tracker</h1>
+    <h1>Mouse Coordinates</h1>
     <p id="coordinates">Move your mouse to see coordinates.</p>
 </body>
 </html>
