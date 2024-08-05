@@ -7,7 +7,7 @@
 
 - **On Left Click**:
   - **Saves Mouse Coordinates**: Records the current position of the mouse cursor.
- <img width="250" alt="image" src="https://github.com/user-attachments/assets/33dd7e6f-76e9-4ba6-951e-08e1807e5079">
+ <img width="400" alt="image" src="https://github.com/user-attachments/assets/33dd7e6f-76e9-4ba6-951e-08e1807e5079">
 
   - **Captures Image**: Takes a snapshot from the connected webcam and saves the image.
 - **Data Storage**: Stores mouse coordinates and image paths in an SQLite database.
