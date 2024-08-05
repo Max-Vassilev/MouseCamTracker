@@ -8,22 +8,25 @@
         }
     </style>
     <script>
-        const socket = new WebSocket('ws://127.0.0.1:8000/ws/mouse_tracking/');
+        const mouse_tracking_socket = new WebSocket('ws://127.0.0.1:8000/ws/mouse_tracking/');
 
-        socket.onmessage = (event) => {
+        // Send mouse coordinates to the server whenever the mouse is moved
+        document.addEventListener('mousemove', (event) => {
+            const x = event.clientX;
+            const y = event.clientY;
+            mouse_tracking_socket.send(JSON.stringify({ x, y }));
+        });
+
+        // Handle incoming messages from the server
+        mouse_tracking_socket.onmessage = (event) => {
             const data = JSON.parse(event.data);
             document.getElementById('coordinates').innerText = `X: ${data.x}, Y: ${data.y}`;
         };
 
-        document.addEventListener('mousemove', (event) => {
-            const x = event.clientX;
-            const y = event.clientY;
-            socket.send(JSON.stringify({ x, y }));
-        });
     </script>
 </head>
 <body>
     <h1>Mouse Coordinates</h1>
-    <p id="coordinates"></p>
+    <h3 id="coordinates"></h3>
 </body>
 </html>
