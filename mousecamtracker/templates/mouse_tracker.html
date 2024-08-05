@@ -8,25 +8,39 @@
         }
     </style>
     <script>
+        let mouseX = 0;
+        let mouseY = 0;
+
+        // WebSocket for mouse coordinates
         const mouse_tracking_socket = new WebSocket('ws://127.0.0.1:8000/ws/mouse_tracking/');
 
-        // Send mouse coordinates to the server whenever the mouse is moved
+        // Update mouse coordinates and send them down the WebSocket
         document.addEventListener('mousemove', (event) => {
-            const x = event.clientX;
-            const y = event.clientY;
-            mouse_tracking_socket.send(JSON.stringify({ x, y }));
+            mouseX = event.clientX;
+            mouseY = event.clientY;
+            mouse_tracking_socket.send(JSON.stringify({ x: mouseX, y: mouseY }));
         });
 
-        // Handle incoming messages from the server
+        // Handle messages comming back from the WebSocket
         mouse_tracking_socket.onmessage = (event) => {
             const data = JSON.parse(event.data);
             document.getElementById('coordinates').innerText = `X: ${data.x}, Y: ${data.y}`;
         };
+        
+        // WebSocket for mouse clicks
+        const clickSocket = new WebSocket('ws://127.0.0.1:8000/ws/mouse_click/');
+
+        // Send mouse coordinates when left mouse button is clicked
+        document.addEventListener('mousedown', (event) => {
+            if (event.button === 0) { 
+                clickSocket.send(JSON.stringify({ x: mouseX, y: mouseY }));
+            }
+        });
 
     </script>
 </head>
 <body>
-    <h1>Mouse Coordinates</h1>
-    <h3 id="coordinates"></h3>
+    <h1>Mouse Coordinates:</h1>
+    <h2 id="coordinates"></h2>
 </body>
 </html>
