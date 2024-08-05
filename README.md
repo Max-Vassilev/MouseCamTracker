@@ -3,6 +3,7 @@
 ## Features
 
 - **Tracks Mouse Movement**: Continuously monitors and displays the mouse coordinates ("X" and "Y"):
+
   <img width="250" alt="image" src="https://github.com/user-attachments/assets/a0ccf2ff-18a0-4bc0-8ebd-9c346d115f3a">
 
 - **On Left Click**:
