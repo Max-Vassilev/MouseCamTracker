@@ -7,10 +7,9 @@
 
 - **On Left Click**:
   - **Saves Mouse Coordinates**: Records the current position of the mouse cursor and creates instance for it in the database.
-    <img width="400" alt="image" src="https://github.com/user-attachments/assets/33dd7e6f-76e9-4ba6-951e-08e1807e5079">
-
   - **Captures Image**: Takes a snapshot from the connected webcam and saves the image.
 - **Data Storage**: Stores mouse coordinates and image paths in an SQLite database.
+    <img width="400" alt="image" src="https://github.com/user-attachments/assets/33dd7e6f-76e9-4ba6-951e-08e1807e5079">
 
 ## How to Setup and Run the Project on Windows
 
