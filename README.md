@@ -6,7 +6,7 @@
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/a0ccf2ff-18a0-4bc0-8ebd-9c346d115f3a">
 
 - **On Left Click**:
-  - **Saves Mouse Coordinates**: Records the current position of the mouse cursor.
+  - **Saves Mouse Coordinates**: Records the current position of the mouse cursor and creates instance for it in the database.
     <img width="400" alt="image" src="https://github.com/user-attachments/assets/33dd7e6f-76e9-4ba6-951e-08e1807e5079">
 
   - **Captures Image**: Takes a snapshot from the connected webcam and saves the image.
