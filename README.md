@@ -61,8 +61,7 @@ However, please note that running the server this way will not support asynchron
 ## Used Technologies
 1. asyncio (via Django Channels for real-time asynchronous features)
 2. Webserver (with Uvicorn for ASGI)
-3. WebSockets
-4. 
+3. WebSockets (mouse_tracking and mouse_click)
 5. OpenCV - image/media processing
 6. SQLite
 
