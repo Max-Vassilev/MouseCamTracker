@@ -2,7 +2,7 @@ import json
 from channels.generic.websocket import WebsocketConsumer
 from mousecamtracker.tracker.models import *
 
-class MouseConsumer(WebsocketConsumer):
+class MouseTrackingConsumer(WebsocketConsumer):
     def connect(self):
         self.accept()
 
