@@ -11,7 +11,8 @@
   - **Captures Image**: Takes a snapshot from the connected webcam and saves the image.
 - **Data Storage**: Stores mouse coordinates and image paths in an SQLite database.
 
-    <img width="450" alt="image" src="https://github.com/user-attachments/assets/d2bdb89b-0fad-4a59-b397-015f59062d94">
+    <img width="500" alt="image" src="https://github.com/user-attachments/assets/d263e8c1-daa3-4d51-878d-d95f0ff9837c">
+
 
 
 ## How to Setup and Run the Project on Windows
