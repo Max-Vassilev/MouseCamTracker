@@ -64,5 +64,5 @@ However, please note that running the server this way will not support asynchron
 2. Webserver (with Uvicorn for ASGI)
 3. WebSockets
 4. 
-5.
+5. OpenCV - image/media processing
 6. SQLite
