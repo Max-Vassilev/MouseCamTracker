@@ -3,14 +3,15 @@
 ## Features
 
 - **Tracks Mouse Movement**: Continuously monitors and displays the mouse coordinates ("X" and "Y"):
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/a0ccf2ff-18a0-4bc0-8ebd-9c346d115f3a">
+
+  <img width="250" alt="image" src="https://github.com/user-attachments/assets/a0ccf2ff-18a0-4bc0-8ebd-9c346d115f3a">
 
 - **On Left Click**:
   - **Saves Mouse Coordinates**: Records the current position of the mouse cursor and creates instance for it in the database.
-    <img width="400" alt="image" src="https://github.com/user-attachments/assets/33dd7e6f-76e9-4ba6-951e-08e1807e5079">
-
   - **Captures Image**: Takes a snapshot from the connected webcam and saves the image.
 - **Data Storage**: Stores mouse coordinates and image paths in an SQLite database.
+
+    <img width="400" alt="image" src="https://github.com/user-attachments/assets/33dd7e6f-76e9-4ba6-951e-08e1807e5079">
 
 ## How to Setup and Run the Project on Windows
 
@@ -51,10 +52,16 @@ Since the application uses asynchronous functionality, you need to run the serve
 ```bash
 uvicorn mousecamtracker.asgi:application --host 127.0.0.1 --port 8000
 ```
+While running the server with Uvicorn is necessary for asynchronous tasks, you might encounter issues with the Django admin panel's frontend appearance. If you experience such issues, you can run the server using Django’s development server as a temporary workaround:
+```bash
+python manage.py runserver
+```
+However, please note that running the server this way will not support asynchronous tasks. This method should only be used for administrative purposes.
+
 
 ## Used Technologies:
 1. asyncio (via Django Channels for real-time asynchronous features)
-2. Webserver (with Uvicorn for USGI)
+2. Webserver (with Uvicorn for ASGI)
 3. WebSockets
 4. 
 5.
