@@ -52,10 +52,11 @@ Since the application uses asynchronous functionality, you need to run the serve
 ```bash
 uvicorn mousecamtracker.asgi:application --host 127.0.0.1 --port 8000
 ```
-If you have trouble with the Django admin panel, you may have to run the server with the following command:
+While running the server with Uvicorn is necessary for asynchronous tasks, you might encounter issues with the Django admin panel's frontend appearance. If you experience such issues, you can run the server using Django’s development server as a temporary workaround:
 ```bash
 python manage.py runserver
 ```
+However, please note that running the server this way will not support asynchronous tasks. This method should only be used for administrative purposes.
 
 
 ## Used Technologies:
