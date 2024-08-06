@@ -58,10 +58,13 @@ python manage.py runserver
 However, please note that running the server this way will not support asynchronous tasks. This method should only be used for administrative purposes.
 
 
-## Used Technologies:
+## Used Technologies
 1. asyncio (via Django Channels for real-time asynchronous features)
 2. Webserver (with Uvicorn for ASGI)
 3. WebSockets
 4. 
 5. OpenCV - image/media processing
 6. SQLite
+
+## Note:
+Images are not stored in the database but are saved in a media folder, which is not uploaded to GitHub. The project is configured so that when an image is captured after a left click, it is stored in the media folder. The database only records the image path along with the X and Y coordinates.
